@@ -1,12 +1,73 @@
+<!--
+ * @Author: ao.tu
+ * @email: 2250467773@qq.com
+ * @Date: 2024-01-04 10:53:07
+ * @LastEditors: Do not edit
+ * @LastEditTime: 2024-07-16 15:54:16
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>cropic.js</title>
+    <style>
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        background: #f2f2f2;
+        padding: 0;
+        margin: 0;
+        font-size: 1em;
+      }
+
+      .button {
+        width: 80%;
+        background: green;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        margin: 20px auto;
+        border-radius: 4px;
+        position: relative;
+      }
+
+      .upload-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+      .img {
+        height: 315px;
+        display: flex;
+        justify-content: center;
+      }
+      #previewImg {
+        max-width: 100%;
+        border-radius: 50%;
+      }
+    </style>
+    <link rel="stylesheet" crossorigin href="/assets/index-DAwoziif.css">
   </head>
+
   <body>
-    <h1>hello world!</h1>
+    <section>
+      <div class="img">
+        <img id="previewImg" src="/assets/ma-CVp6l60n.png" alt="预览" />
+      </div>
+      <div class="button" role="button">
+        选择图片
+        <input type="file" name="file" class="upload-img" accept="image/*" />
+      </div>
+    </section>
+    <script src="main.js"></script>
   </body>
 </html>
